@@ -1,30 +1,32 @@
 //
-//  ViewController.swift
-//  StarRating
-//
-//  Created by GaliSrikanth on 29/05/24.
-//
+//  StarRatingView.swift
+//  Created by GaliSrikanth on 30/05/24.
 
 import UIKit
 
-class ViewController: UIViewController {
+class StarRatingView: UIView {
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var ratingsContainer: UIStackView!
     var selectedRating = 0
     
-    
-    @IBOutlet weak var starRatingView: StarRatingView!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    @IBAction func btnAction(_ sender: Any) {
-        print(starRatingView.selectedRating)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.commonInit()
     }
     
-    @IBAction func selectedRating(_ sender: UIButton) {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.commonInit()
+    }
+    
+    private func commonInit() {
+        let nib = UINib(nibName: "StarRatingView", bundle: nil)
+        nib.instantiate(withOwner: self, options: nil)
+        contentView.frame = bounds
+        addSubview(contentView)
+    }
+    
+    @IBAction func starBtnClicked(_ sender: UIButton) {
         if selectedRating == sender.tag {
             selectedRating = 0
         } else {
@@ -51,4 +53,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

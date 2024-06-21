@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarRatingView" customModule="StarRating" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="uMZ-6r-Gtf"/>
+                <outlet property="ratingsContainer" destination="RmK-US-gul" id="UaH-ZS-q9g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9E-Wq-BzM">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="25"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="RmK-US-gul">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="25"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw7-EC-1g9">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="7vB-yb-gd3"/>
+                                        <constraint firstAttribute="width" constant="25" id="kI4-r0-cx3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="GoldStarEmpty" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="starBtnClicked:" destination="-1" eventType="touchUpInside" id="G7p-nc-DdM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joU-Gc-Tsu">
+                                    <rect key="frame" x="36.333333333333336" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="6XI-rF-1JR"/>
+                                        <constraint firstAttribute="height" constant="25" id="h8x-dJ-kCp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="GoldStarEmpty" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="starBtnClicked:" destination="-1" eventType="touchUpInside" id="Zai-H8-60c"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgD-nU-R79">
+                                    <rect key="frame" x="72.666666666666671" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="PBb-mK-jZt"/>
+                                        <constraint firstAttribute="width" constant="25" id="Zyr-Ka-Nmo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="GoldStarEmpty" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="starBtnClicked:" destination="-1" eventType="touchUpInside" id="qoY-Zu-qBD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if3-KJ-flP">
+                                    <rect key="frame" x="108.66666666666667" y="0.0" width="25.000000000000014" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="Uid-Vi-f2I"/>
+                                        <constraint firstAttribute="height" constant="25" id="y52-Mi-RZr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="GoldStarEmpty" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="starBtnClicked:" destination="-1" eventType="touchUpInside" id="Ajb-aV-xL8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-hD-x7X">
+                                    <rect key="frame" x="145" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="AVM-iD-hx8"/>
+                                        <constraint firstAttribute="height" constant="25" id="OZi-AR-mmS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="GoldStarEmpty" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="starBtnClicked:" destination="-1" eventType="touchUpInside" id="y4B-Ec-EvN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RmK-US-gul" firstAttribute="leading" secondItem="N9E-Wq-BzM" secondAttribute="leading" id="Hfm-2g-lyC"/>
+                        <constraint firstAttribute="bottom" secondItem="RmK-US-gul" secondAttribute="bottom" id="Ihz-5D-QCp"/>
+                        <constraint firstAttribute="trailing" secondItem="RmK-US-gul" secondAttribute="trailing" id="eQD-I4-Owj"/>
+                        <constraint firstItem="RmK-US-gul" firstAttribute="top" secondItem="N9E-Wq-BzM" secondAttribute="top" id="zLI-vE-ReC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N9E-Wq-BzM" secondAttribute="trailing" id="1Dv-wM-h0i"/>
+                <constraint firstItem="N9E-Wq-BzM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LWB-uQ-SwS"/>
+                <constraint firstAttribute="bottom" secondItem="N9E-Wq-BzM" secondAttribute="bottom" id="aAz-gi-h4U"/>
+                <constraint firstItem="N9E-Wq-BzM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uLp-rh-sF1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-19.083969465648853" y="-219.36619718309859"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GoldStarEmpty" width="53" height="51"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
